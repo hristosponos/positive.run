@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* RESET */
+
+#js-disabled{
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    font-weight: 700;
+    background: white;
+}
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", serif;
+	font-optical-sizing: auto;
+	font-weight: 400; /* regular  */
+	font-style: normal;
+    color: #161616; 
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    background: none;
+    text-decoration: none;
+}
+
+
+/* GENERAL STYLES */
+
+.button{
+	padding: 1rem 2rem;
+	width: fit-content;
+	border-radius: 500px;
+	font-size: 1.25rem;
+}
+
+.button-filled{
+	background: #A5FA37;
+}
+
+.button-outlined{
+	background: none;
+	padding: calc(1rem - 3px) calc(2rem - 3px);
+	border: 3px solid #A5FA37;
+}
