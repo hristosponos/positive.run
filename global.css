@@ -1,6 +1,8 @@
+/* GENERAL STYLES */
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-/* RESET */
+/* Reset */
 
 #js-disabled{
     position: fixed;
@@ -27,10 +29,46 @@
     font-size: 1rem;
     background: none;
     text-decoration: none;
+    line-height: 100%;
 }
 
+/* Font */
 
-/* GENERAL STYLES */
+h1{
+	font-size: 3.812rem;
+	font-weight: 600;
+}
+
+h2{
+	font-size: 3rem;
+}
+
+h3{
+	font-size: 2.4rem;
+}
+
+h4{
+	font-size: 2.94rem;
+}
+
+h5{
+	font-size: 1.56rem;
+}
+
+h6{
+	font-size: 1.25rem;
+}
+
+p{
+	font-size: 1rem;
+	line-height: 125%;
+}
+
+.small-text{
+	font-size: .8rem;
+}
+
+/* General Styles */
 
 .button{
 	padding: 1rem 2rem;
@@ -41,6 +79,9 @@
 
 .button-filled{
 	background: #A5FA37;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(165,250,55,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(165,250,55,1);
+	box-shadow: 0px 0px 10px 0px rgba(165,250,55,1);
 }
 
 .button-outlined{
@@ -48,3 +89,111 @@
 	padding: calc(1rem - 3px) calc(2rem - 3px);
 	border: 3px solid #A5FA37;
 }
+
+.buttons{
+	display: flex;
+	gap: 20px;
+	width: max-content;
+}
+
+.buttons a:last-child{
+
+}
+
+header, section{
+	width: 100vw;
+}
+
+section{
+	margin-bottom: 128px;
+}
+
+.wrapper{
+    max-width: 1220px;
+    margin: 0 auto 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    height: 100%;
+}
+
+@media (max-width:  1260px){
+    .wrapper{
+        padding: 0 20px;
+    }
+}
+
+a{
+	font-weight: 500;
+}
+
+a:hover{
+	text-decoration: underline #A5FA37 10%;
+}
+
+a:has(.button){
+	text-decoration: none !important;
+}
+
+
+/* Header */
+
+header{
+	padding: 1rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: white;
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,.25);
+	-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,.25);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,.25);
+}
+
+
+header .wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo img{
+	height: 3rem;
+
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	grid-column: span 3;
+}
+
+.logo *{
+	font-size: 1.25rem;
+	margin-left: 1rem;
+}
+
+/* Hero */
+
+.hero{
+	width: 100vw;
+	height: 100vh;
+	background: url("assets/hero.jpg");
+	background-size: cover;
+}
+
+.hero .wrapper{
+	align-items: center;
+}
+
+.hero h1{
+	color: white;
+	padding-bottom: 1.25rem;
+}
+
+.hero .button-outlined{
+	background: rgba(0, 0, 0, .5);
+	color: white;
+}
+
+/* About */
