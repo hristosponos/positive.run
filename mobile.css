@@ -41,3 +41,14 @@
   opacity: 1;
   visibility: visible;
 }
+
+
+
+@media (max-width: 900px){
+	#about .image{
+		display: none;
+	}
+	.about-text{
+		grid-column: span 12 ;
+	}
+}
