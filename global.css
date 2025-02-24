@@ -79,6 +79,7 @@ p{
 	width: fit-content;
 	border-radius: 500px;
 	font-size: 1.25rem;
+	min-width: max-content;
 }
 
 .button-filled{
