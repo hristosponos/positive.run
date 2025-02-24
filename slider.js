@@ -13,7 +13,7 @@ const swiper = new Swiper(".swiper", {
   grabCursor: true,      // Cursor turns into a grab hand
   breakpoints: {
     1200: { slidesPerView: 4 }, 
-    600: { slidesPerView: 3 },
+    850: { slidesPerView: 3 },
     100: { slidesPerView: 2 } 
   }
 });
