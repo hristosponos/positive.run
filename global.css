@@ -41,14 +41,17 @@ h1{
 
 h2{
 	font-size: 3rem;
+	font-weight: 600;
 }
 
 h3{
 	font-size: 2.4rem;
+	font-weight: 600;
 }
 
 h4{
 	font-size: 2.94rem;
+	font-weight: 600;
 }
 
 h5{
@@ -62,6 +65,7 @@ h6{
 p{
 	font-size: 1rem;
 	line-height: 125%;
+	font-weight: 300;
 }
 
 .small-text{
@@ -113,8 +117,6 @@ section{
     margin: 0 auto 0 auto;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
     height: 100%;
 }
 
@@ -148,6 +150,7 @@ header{
 	-webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,.25);
 	-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,.25);
 	box-shadow: 0px 0px 25px 0px rgba(0,0,0,.25);
+	z-index: 100;
 }
 
 
@@ -165,7 +168,6 @@ header .wrapper{
 .logo{
 	display: flex;
 	align-items: center;
-	grid-column: span 3;
 }
 
 .logo *{
@@ -197,3 +199,143 @@ header .wrapper{
 }
 
 /* About */
+
+#about .image{
+	background: url("assets/us.png");
+	background-size: cover;
+	grid-column: span 4;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	-webkit-box-shadow: 20px 20px 0px 0px rgba(165,250,55,1);
+	-moz-box-shadow: 20px 20px 0px 0px rgba(165,250,55,1);
+	box-shadow: 20px 20px 0px 0px rgba(165,250,55,1);
+}
+
+#about .image::before{
+	content: "";
+	display: block;
+	position: relative;
+	left: 0;
+	padding: 64px 0;
+	padding-left: 100vw;
+	transform: translate(-100vw, -64px);
+	width: 90%;
+	height: 100%;
+	background: #F7FA3E;
+	z-index: -1;
+}
+
+/* Members */
+
+.member img{
+	object-fit: cover;
+	width: calc(100% - 16px);
+	aspect-ratio: 1 / 1;
+	border: 8px solid #F7FA3E;
+}
+
+.member h5, .member p{
+	text-align: center;
+}
+
+.member h5{
+	padding-top: 12px;
+}
+
+#members h2{
+	width: 100%;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.member p{
+	padding-top: 2px;
+}
+
+.member-list{
+	align-items: center;
+	text-align: center;
+}
+
+.member-list{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.member-list .swiper{
+	width: 100%;
+}
+
+.member-list .small-text{
+	margin-top: 2rem;
+	color: #686868;
+}
+
+/* Gallery */
+
+.gallery-heading{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 64px;
+}
+
+.gallery-heading h2{
+	padding-bottom: 1rem;
+}
+
+.gallery-heading p{
+	text-decoration: underline wavy #A5FA37 10%;
+	text-underline-offset: 4px;
+}
+
+.gallery-season-list{
+	grid-column: span 12;
+}
+
+.season{
+	grid-column: span 3;
+	width: 100%;
+	display: grid;
+}
+
+.season img{
+	width: 100%;
+}
+
+.season-title{
+	width: 100%;
+	padding: 1rem 0;
+	text-align: center;
+	background: #F7FA3E;
+}
+
+/* CTA */
+
+.join-us h2{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 24px;
+}
+
+.join-us .wrapper{
+	row-gap: 24px;
+}
+
+.join-us p{
+	grid-column: 4 / 10;
+	text-align: center;
+}
+
+.join-us a{
+	grid-column: 5 / 9;
+	display: flex;
+	justify-content: center;
+}
+
+
+footer p{
+	grid-column: span 12;
+	padding-bottom: 32px;
+}
+

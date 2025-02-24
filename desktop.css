@@ -1,5 +1,10 @@
 /* DESKTOP STYLES */
 
+.wrapper{
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
 /* Header */
 
 .header-links{
@@ -13,30 +18,14 @@
 	grid-column: span 6;
 }
 
+.logo{
+	grid-column: span 3;
+}
+
 /* About */
 
 #about .image{
-	background: url("assets/us.png");
-	background-size: cover;
 	grid-column: span 4;
-	width: 100%;
-	-webkit-box-shadow: 20px 20px 0px 0px rgba(165,250,55,1);
-	-moz-box-shadow: 20px 20px 0px 0px rgba(165,250,55,1);
-	box-shadow: 20px 20px 0px 0px rgba(165,250,55,1);
-}
-
-#about .image::before{
-	content: "";
-	display: block;
-	position: relative;
-	left: 0;
-	padding: 64px 0;
-	padding-left: 100vw;
-	transform: translate(-100vw, -64px);
-	width: 90%;
-	height: 100%;
-	background: #F7FA3E;
-	z-index: -1;
 }
 
 .about-text{
@@ -45,5 +34,15 @@
 	flex-direction: column;
 	gap: 2rem;
 	justify-content: center;
+}
+
+/* Members */
+
+#members h2{
+	grid-column: span 12;
+}
+
+.member{
+	grid-column: span 3;
 }
 
