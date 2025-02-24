@@ -5,6 +5,10 @@
     gap: 20px;
 }
 
+#burger{
+	display: none;
+}
+
 /* Header */
 
 .header-links{
